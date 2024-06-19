@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sanchu6c/page_a.dart';
 import 'package:sanchu6c/page_b.dart';
 import 'package:sanchu6c/page_c.dart';
+import 'package:sanchu6c/page_d.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,6 +74,18 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('PageC'),
+            ),
+            ElevatedButton(
+              onPressed: (){
+                //ToDo
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PageD()
+                  ),
+                );
+              },
+              child: const Text('PageD'),
             ),
           ],
         ),
