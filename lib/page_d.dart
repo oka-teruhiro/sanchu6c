@@ -18,6 +18,12 @@ class _PageDState extends State<PageD> {
     });
   }
 
+  void _closePanel(int index) {
+    setState(() {
+      _listExpanded[index] = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,16 +45,16 @@ class _PageDState extends State<PageD> {
               ExpansionPanel(
                 isExpanded: _listExpanded[0],
                 headerBuilder: (BuildContext context, bool isExpanded) {
-                  return const ListTile(
+                  return  const ListTile(
                     title: Text('日干からみた性格'),
                   );
                 },
                 body: SizedBox(
-                  height: 500,
+                  height: 400,
                   child: Expanded(
                     child: ListView(
-                      children: const [
-                        ListTile(
+                      children: [
+                        const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
                             style: TextStyle(
@@ -56,7 +62,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
                                 'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
@@ -66,7 +72,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
                             style: TextStyle(
@@ -74,7 +80,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
                                 'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
@@ -83,6 +89,10 @@ class _PageDState extends State<PageD> {
                               height: 1.5,
                             ),
                           ),
+                        ),
+                        ElevatedButton(
+                            onPressed: () => _closePanel(0),
+                            child: const Text('閉じる'),
                         ),
                       ],
                     ),
@@ -97,11 +107,11 @@ class _PageDState extends State<PageD> {
                   );
                 },
                 body: SizedBox(
-                  height: 500,
+                  height: 400,
                   child: Expanded(
                     child: ListView(
-                      children: const [
-                        ListTile(
+                      children: [
+                        const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
                             style: TextStyle(
@@ -109,7 +119,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
                                 'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
@@ -119,7 +129,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
                             style: TextStyle(
@@ -127,7 +137,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
                                 'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
@@ -136,6 +146,11 @@ class _PageDState extends State<PageD> {
                               height: 1.5,
                             ),
                           ),
+                        ),
+                        // 閉じるボタンを追加
+                        ElevatedButton(
+                          onPressed: () => _closePanel(1),
+                          child: const Text('閉じる'),
                         ),
                       ],
                     ),
@@ -150,11 +165,11 @@ class _PageDState extends State<PageD> {
                   );
                 },
                 body: SizedBox(
-                  height: 500,
+                  height: 400,
                   child: Expanded(
                     child: ListView(
-                      children: const [
-                        ListTile(
+                      children:  [
+                        const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
                             style: TextStyle(
@@ -162,7 +177,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
                                 'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
@@ -172,7 +187,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
                             style: TextStyle(
@@ -180,7 +195,7 @@ class _PageDState extends State<PageD> {
                             ),
                           ),
                         ),
-                        ListTile(
+                        const ListTile(
                           title: Text(
                             '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
                                 'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
@@ -189,6 +204,11 @@ class _PageDState extends State<PageD> {
                               height: 1.5,
                             ),
                           ),
+                        ),
+                        // 閉じるボタンを追加
+                        ElevatedButton(
+                          onPressed: () => _closePanel(2),
+                          child: const Text('閉じる'),
                         ),
                       ],
                     ),
