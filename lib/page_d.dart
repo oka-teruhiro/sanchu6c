@@ -10,6 +10,14 @@ class PageD extends StatefulWidget {
 class _PageDState extends State<PageD> {
   final _listExpanded = [true, false,false];
 
+  void _togglePanel(int index) {
+    setState(() {
+      for (int i = 0; i < _listExpanded.length; i++ ) {
+        _listExpanded[i] = i == index ? !_listExpanded[i] : false;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,9 +29,10 @@ class _PageDState extends State<PageD> {
           ExpansionPanelList(
             expansionCallback: (int index, bool isExpanded) {
               print('$index $isExpanded');
-              setState(() {
-                _listExpanded[index] = isExpanded;
-              });
+              //setState(() {
+               // _listExpanded[index] = isExpanded;
+             // });
+              _togglePanel(index);
             },
             animationDuration: const Duration(seconds: 1),
             children: [
@@ -35,7 +44,7 @@ class _PageDState extends State<PageD> {
                   );
                 },
                 body: SizedBox(
-                  height: 1000,
+                  height: 500,
                   child: Expanded(
                     child: ListView(
                       children: const [
@@ -88,7 +97,7 @@ class _PageDState extends State<PageD> {
                   );
                 },
                 body: SizedBox(
-                  height: 1000,
+                  height: 500,
                   child: Expanded(
                     child: ListView(
                       children: const [
@@ -141,7 +150,7 @@ class _PageDState extends State<PageD> {
                   );
                 },
                 body: SizedBox(
-                  height: 1000,
+                  height: 500,
                   child: Expanded(
                     child: ListView(
                       children: const [
