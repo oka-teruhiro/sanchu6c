@@ -11,6 +11,7 @@ class _PageCState extends State<PageC> {
   bool _isExpanded = false;
   final _listExpanded = [false, false];
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +45,7 @@ class _PageCState extends State<PageC> {
           const Text('パネル2つ'),
           ExpansionPanelList(
             expansionCallback: (int index, bool isExpanded) {
-              print('$index $isExpanded');
+              //print('$index $isExpanded');
               setState(() {
                 _listExpanded[index] = isExpanded;
               });
@@ -97,6 +98,82 @@ class _PageCState extends State<PageC> {
               ListTile(
                 title: Text('Child 4'),
               ),
+              ListTile(
+                title: Text(
+                  '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                      'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                      '力します。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                      'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                      '力します。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                      'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                      '力します。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                      'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                      '力します。',
+                  style: TextStyle(
+                    height: 1.5,
+                  ),
+                ),
+              ),
+             // ElevatedButton(
+             //   onPressed: (){},// => _closePanel(0),
+             //   child: const Text('閉じる'),
+            //  ),//
             ],
           ),
         ],

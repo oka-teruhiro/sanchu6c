@@ -3,6 +3,8 @@ import 'package:sanchu6c/page_a.dart';
 import 'package:sanchu6c/page_b.dart';
 import 'package:sanchu6c/page_c.dart';
 import 'package:sanchu6c/page_d.dart';
+import 'package:sanchu6c/page_e.dart';
+import 'package:sanchu6c/page_f.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +44,7 @@ class MyHomePage extends StatelessWidget {
             ElevatedButton(
                 onPressed: (){
                   //ToDo
-                  Navigator.pushReplacement(
+                  Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const PageA()
@@ -54,7 +56,7 @@ class MyHomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: (){
                 //ToDo
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => const PageB()
@@ -66,7 +68,7 @@ class MyHomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: (){
                 //ToDo
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => const PageC()
@@ -78,7 +80,7 @@ class MyHomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: (){
                 //ToDo
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => const PageD()
@@ -86,6 +88,30 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('PageD'),
+            ),
+            ElevatedButton(
+              onPressed: (){
+                //ToDo
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PageE()
+                  ),
+                );
+              },
+              child: const Text('PageE'),
+            ),
+            ElevatedButton(
+              onPressed: (){
+                //ToDo
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PageF()
+                  ),
+                );
+              },
+              child: const Text('PageF'),
             ),
           ],
         ),

@@ -34,7 +34,7 @@ class _PageDState extends State<PageD> {
         children: [
           ExpansionPanelList(
             expansionCallback: (int index, bool isExpanded) {
-              print('$index $isExpanded');
+              //print('$index $isExpanded');
               //setState(() {
                // _listExpanded[index] = isExpanded;
              // });
@@ -52,8 +52,45 @@ class _PageDState extends State<PageD> {
                 body: SizedBox(
                   height: 400,
                   child: Expanded(
+                    flex: 1,
                     child: ListView(
                       children: [
+                        const ListTile(
+                          title: Text(
+                            '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                        const ListTile(
+                          title: Text(
+                            '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                                'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                                '力します。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                        const ListTile(
+                          title: Text(
+                            '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                        const ListTile(
+                          title: Text(
+                            '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                                'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                                '力します。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
                         const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
@@ -109,6 +146,7 @@ class _PageDState extends State<PageD> {
                 body: SizedBox(
                   height: 400,
                   child: Expanded(
+                    flex: 1,
                     child: ListView(
                       children: [
                         const ListTile(
@@ -169,6 +207,42 @@ class _PageDState extends State<PageD> {
                   child: Expanded(
                     child: ListView(
                       children:  [
+                        const ListTile(
+                          title: Text(
+                            '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                        const ListTile(
+                          title: Text(
+                            '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                                'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                                '力します。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                        const ListTile(
+                          title: Text(
+                            '　日干が甲の人は、樹木にたとえられる性質を持っています。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                        const ListTile(
+                          title: Text(
+                            '　樹木は天に向かって伸びるように、向上心にあふれ、新しいことをしようと'
+                                'する気持ちが強く、現在おかれている境遇よりもさらに成長しようと努'
+                                '力します。',
+                            style: TextStyle(
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
                         const ListTile(
                           title: Text(
                             '　日干が甲の人は、樹木にたとえられる性質を持っています。',
