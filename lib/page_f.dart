@@ -12,15 +12,16 @@ class _PageFState extends State<PageF> {
 
   void _togglePanel(int index) {
     setState(() {
-      //for (int i = 0; i < _listExpanded.length; i++ ) {
-      //  _listExpanded[i] = i == index ? !_listExpanded[i] : false;
-      if (index == 0) {
+      for (int i = 0; i < _listExpanded.length; i++ ) {
+        _listExpanded[i] = i == index ? !_listExpanded[i] : false;
+      }
+      /*if (index == 0) {
         _listExpanded[0] = !_listExpanded[0];
       } else if (index == 1) {
         _listExpanded[1] = !_listExpanded[1];
       } else {
         _listExpanded[2] = !_listExpanded[2];
-      }
+      }*/
     });
   }
 
@@ -207,7 +208,7 @@ class _PageFState extends State<PageF> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PageE'),
+        title: const Text('PageF'),
       ),
       body: ListView(
         children: [

@@ -5,6 +5,8 @@ import 'package:sanchu6c/page_c.dart';
 import 'package:sanchu6c/page_d.dart';
 import 'package:sanchu6c/page_e.dart';
 import 'package:sanchu6c/page_f.dart';
+import 'package:sanchu6c/page_g.dart';
+import 'package:sanchu6c/page_i.dart';
 
 void main() {
   runApp(const MyApp());
@@ -112,6 +114,30 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('PageF'),
+            ),
+            ElevatedButton(
+              onPressed: (){
+                //ToDo
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PageG()
+                  ),
+                );
+              },
+              child: const Text('PageG'),
+            ),
+            ElevatedButton(
+              onPressed: (){
+                //ToDo
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PageI()
+                  ),
+                );
+              },
+              child: const Text('PageI'),
             ),
           ],
         ),
